@@ -16,6 +16,12 @@ def hello():
     #definimos una ruta para el endpoint raiz "/" que responde a solicitudes get
    return 'hola unida'
 #al acceder a la raiz del sitio, se devuelve este mensaje
+@app.route('/hola', methods=['GET'])
+def hola():
+    #definimos una ruta para el endpoint raiz "/" que responde a solicitudes get
+   return 'hola 2 unida'
+#al acceder a la raiz del sitio, se devuelve este mensaje
+
 if __name__ == "__main__":
     #este bloque se ejecuta solo si el script se ejecuta directamente (no importado como modulo)
     ## app.run (host = '127.0.0.1', debug = True, port = 5000)
