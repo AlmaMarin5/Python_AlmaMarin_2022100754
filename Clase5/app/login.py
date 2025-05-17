@@ -13,6 +13,7 @@ def llamarServicioSet():
     codRes, menRes, accion = inicializarVariables(user, password)
     
     salida = {
+        
         'codRes': codRes,
         'menRes': menRes,
         'usuario': user,
@@ -29,7 +30,9 @@ def inicializarVariables(user, password):
     
     try:
         print("Verificar login")
+        
         #print("Local", password, "Remote:", pasword, "userLocal:", userLocal, "UserRemote", user)
+        
         if password == passLocal and user == userLocal:
             print("Usuario y contraseña OK")
             accion = "Success"
