@@ -33,6 +33,7 @@ def inicializarVariables(user, password):
         
         #print("Local", password, "Remote:", pasword, "userLocal:", userLocal, "UserRemote", user)
         
+        
         if password == passLocal and user == userLocal:
             print("Usuario y contraseña OK")
             accion = "Success"

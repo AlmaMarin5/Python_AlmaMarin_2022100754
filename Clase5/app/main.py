@@ -7,7 +7,9 @@ from login2  import login2
 
 
 app = Flask(__name__)
+
 #registrar el blueprint de login
+
 app.register_blueprint(login)
 app.register_blueprint(login2)
 

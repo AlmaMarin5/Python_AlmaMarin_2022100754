@@ -6,7 +6,6 @@ create table if not exists users(
 	created_at timestamp default current_timestamp()
 	
 );
-
 insert into users (username, pass) values('amarin','unida123');
 
 select * from users;

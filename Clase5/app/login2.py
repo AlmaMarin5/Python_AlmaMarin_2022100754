@@ -6,6 +6,7 @@ login2 = Blueprint('login2', __name__)
 
 #configuracion de la base de datos
 
+
 DB_CONFIG = {
     'host': 'localhost',
     'user': 'unida',
