@@ -63,6 +63,7 @@ def verificar_credenciales(user, password):
         menRes = 'Msg: ' + str(e)
         accion = "Error interno"
         
+        
     return codRes, menRes, usuario, accion
         
             
