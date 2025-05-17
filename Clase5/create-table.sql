@@ -1,3 +1,4 @@
+USE jaguarete;
 create table if not exists users(
 	id int auto_increment primary key,
 	username varchar(50) not null unique,
@@ -6,8 +7,7 @@ create table if not exists users(
 	
 );
 
-insert into users (username, pass) values('user1','password1');
-insert into users (username, pass) values('user2','password2');
-insert into users (username, pass) values('user3','password3');
+insert into users (username, pass) values('amarin','unida123');
 
-select * from users
+select * from users;
+SELECT username From users WHERE username = 'amarin' AND pass = 'unida123'
