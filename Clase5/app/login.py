@@ -1,5 +1,7 @@
 from flask import Blueprint, request, jsonify
+
 login = Blueprint('login',__name__)
+
 
 @login.route('/login', methods=['POST'])
 def llamarServicioSet():
@@ -16,6 +18,7 @@ def llamarServicioSet():
         'usuario': user,
         'accion': accion
     }
+    
     return jsonify(salida)
 
 def inicializarVariables(user, password):
