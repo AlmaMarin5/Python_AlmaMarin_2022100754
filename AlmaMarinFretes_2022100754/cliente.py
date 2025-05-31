@@ -15,6 +15,7 @@ def verificar_cliente():
         'ci': ci
     }
     
+    
     return jsonify(salida)
 
 
